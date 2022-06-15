@@ -6,51 +6,57 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Alpha Shop</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400&family=Roboto:wght@400;500;700;900&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="dist/main.css" />
 </head>
 
 <body>
   <header>
-    <div class="nav-wrapper">
-      <input type="checkbox" class="navbar-toggle" id="navbar-toggle" />
-      <nav class="nav">
-        <ul class="nav-list">
-          <li class="nav-item">
-            <a class="nav-link" href="#">男款</a>
+    <div class="navbar">
+      <input type="checkbox" class="navbar__input--toggle" id="navbar__input--toggle" />
+      <nav class="nav w-100">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a class="nav__link" href="#">男款</a>
           </li>
-          <li class="nav-item"><a class="nav-link" href="#">女款</a></li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">最新消息</a>
+          <li class="nav__item"><a class="nav__link" href="#">女款</a></li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">最新消息</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">聯絡我們</a>
+          <li class="nav__item">
+            <a class="nav__link" href="#">聯絡我們</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">客製商品</a>
+          <li class="nav__item">
+            <a class="nav__link" href="#">客製商品</a>
           </li>
         </ul>
+        <div class="nav__icons">
+          <div class="nav__icons--search"><img src="images/Icon-search@2x.png" alt=""></div>
+          <div class="nav__icons--cart"><img src="images/Icon-cart@2x.png" alt=""></div>
+          <div class="nav__icons--moon"><img src="images/Icon-moon@2x.png" alt=""></div>
+        </div>
       </nav>
       <!--增加 label 標籤-->
-      <label class="navbar-toggle-label" for="navbar-toggle">
+      <label class="navbar__label--toggle" for="navbar__input--toggle">
         <img src="images/Vector@2x.png" alt="" id="hamburger">
       </label>
-      <a href="#" class="navbar-brand">
-        <img src="images/Logo@2x.png" alt="" id="nav-logo">
+      <a href="#" class="navbar__brand">
+        <img src="images/Logo@2x.png" alt="" class="navbar__logo">
       </a>
-      <div class="nav-icon-wrapper">
-        <div><img src="images/Icon-search@2x.png" alt=""></div>
-        <div><img src="images/Icon-cart@2x.png" alt=""></div>
-        <div><img src="images/Icon-moon@2x.png" alt=""></div>
-      </div>
+      
     </div>   
   </header>
-  <main id="main-content">
+  <!-- <main id="main-content">
     <div class="main-title-wrapper">
       <h1 class="main-title">結帳</h1>
     </div>
-    <div class="main-content-wrapper">
+    <div class="main-content-wrapper"> -->
       <!-- stepper -->
-      <div id="step-control" class="stepper-panel">
+      <!-- <div id="step-control" class="stepper-panel">
         <div class="stepper-container">
           <div class="step">
             <div class="circle-container"></div>
@@ -67,9 +73,9 @@
             <div class="label-container">付款資訊</div>
           </div>
         </div>
-      </div>
+      </div> -->
         <!-- form -->
-        <div class="form-panel">
+        <!-- <div class="form-panel">
           <div class="form-container">
             <form action="" id="form-checkout">
               <div class="part">
@@ -109,9 +115,9 @@
               </div>
             </form>  
           </div>
-        </div>
+        </div> -->
         <!-- shopping cart -->
-        <div class="shopping-cart-panel">
+        <!-- <div class="shopping-cart-panel">
           <div id="shopping-cart-container">
             <h4 class="shopping-cart-title">購物籃</h4>
             <div class="shopping-cart-items">
@@ -158,8 +164,8 @@
           <button>下一步</button>
         </div>
     </div>
-  </main>
-  <footer>
+  </main> -->
+  <!-- <footer>
     <div class="footer-logo-wrapper">
       <a href="#" class="footer-logo-link">
         <img src="images/Logo@2x.png" alt="" id="footer-logo">
@@ -199,7 +205,7 @@
         <div class=""><img src="images/call@2x.png" alt=""></div>
       </div>  
     </div>
-  </footer>
+  </footer> -->
   <script src="dist/bundle.js"></script>
 </body>
 
