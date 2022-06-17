@@ -53,38 +53,45 @@
         <div class="nav__icons--pc--cart"><img src="images/Icon-cart@2x.png" alt=""></div>
         <div class="nav__icons--pc--moon"><img src="images/Icon-moon@2x.png" alt=""></div>
       </div>
-      
-    </div>   
-  </header>
-  <!-- <main id="main-content">
-    <div class="main-title-wrapper">
-      <h1 class="main-title">結帳</h1>
+
     </div>
-    <div class="main-content-wrapper"> -->
+  </header>
+  <main id="main-content" class="mt-4">
+    <div class="main__title-wrapper container">
+      <h2 class="main-title">結帳</h2>
+    </div>
+    <div class="main__content-wrapper container">
       <!-- stepper -->
-      <!-- <div id="step-control" class="stepper-panel">
-        <div class="stepper-container">
-          <div class="step">
-            <div class="circle-container"></div>
-            <div class="label-container">寄送地址</div>
+      <div id="step-control" class="stepper__panel my-6">
+        <div class="stepper__panel--container">
+          <div class="stepper__panel__step">
+            <div class="stepper__panel__step--pc">
+              <div class="stepper__panel__step--circle left active "></div>
+              <div class="stepper__panel__step--label adress">寄送地址</div>
+            </div>
+
           </div>
-          <div class="step">
-            <div class="circle-container"></div>
-            <span class="connect-line"></span>
-            <div class="label-container">運送方式</div>
+          <div class="stepper__panel__step">
+            <div class="stepper__panel__step--pc">
+              <div class="stepper__panel__step--circle"></div>
+              <div class="stepper__panel__step--label shipway">運送方式</div>
+            </div>
+            <span class="connect-line before"></span>
           </div>
-          <div class="step">
-            <div class="circle-container"></div>
-            <span class="connect-line"></span>
-            <div class="label-container">付款資訊</div>
+          <div class="stepper__panel__step">
+            <div class="stepper__panel__step--pc">
+              <div class="stepper__panel__step--circle right"></div>
+              <div class="stepper__panel__step--label payinfo">付款資訊</div>
+            </div>
+            <span class="connect-line after"></span>
           </div>
         </div>
-      </div> -->
-        <!-- form -->
-        <!-- <div class="form-panel">
-          <div class="form-container">
-            <form action="" id="form-checkout">
-              <div class="part">
+      </div>
+      <!-- form -->
+      <div class="form-panel">
+        <div class="form-container">
+          <form action="" id="form-checkout">
+            <div class="part">
               <div class="part-title">寄送地址</div>
               <div class="form-row">
                 <label for="">稱謂</label>
@@ -114,63 +121,63 @@
               <div class="form-row">
                 <label for="">地址</label><input id="user-address" type="text" placeholder="請輸入地址" />
               </div>
-              </div>
-              <div id="btn-control" class="control-panel">
+            </div>
+            <!-- <div id="btn-control" class="control-panel">
                 <button>上一步</button>
                 <button>下一步</button>
+              </div> -->
+          </form>
+        </div>
+      </div> -->
+      <!-- shopping cart -->
+      <div class="shopping-cart-panel">
+        <div id="shopping-cart-container">
+          <h4 class="shopping-cart-title">購物籃</h4>
+          <div class="shopping-cart-items">
+            <div class="shopping-cart-item">
+              <div class="img-wrapper">
+                <img src="images/product1@1x.png" alt="" class="shopping-cart-image">
               </div>
-            </form>  
-          </div>
-        </div> -->
-        <!-- shopping cart -->
-        <!-- <div class="shopping-cart-panel">
-          <div id="shopping-cart-container">
-            <h4 class="shopping-cart-title">購物籃</h4>
-            <div class="shopping-cart-items">
-              <div class="shopping-cart-item">
-                <div class="img-wrapper">
-                  <img src="images/product1@1x.png" alt="" class="shopping-cart-image">
-                </div>
-                <div class="cart-item-title">
-                  破壞補釘修身牛仔褲
-                </div>
-                <div class="cart-item-buttons-wrapper">
-                  <div class="cart-item-button">-</div>
-                  <div class="cart-item-number">1</div>
-                  <div class="cart-item-button">+</div>
-                </div>
+              <div class="cart-item-title">
+                破壞補釘修身牛仔褲
               </div>
-              <div class="shopping-cart-item">
-                <div class="img-wrapper">
-                  <img src="images/product2@1x.png" alt="" class="shopping-cart-image">
-                </div>
-                <div class="cart-item-title">
-                  刷色直筒牛仔褲
-                </div>
-                <div class="cart-item-buttons-wrapper">
-                  <div class="cart-item-button">-</div>
-                  <div class="cart-item-number">1</div>
-                  <div class="cart-item-button">+</div>
-                </div>
-              </div>
-              <div class="shipping-fee-wrapper">
-                <div class="shipping-fee-title">運費</div>
-                <div class="shipping-fee-amount">免費</div>
-              </div>
-              <div class="total-fee-wrapper">
-                <div class="total-fee-title">小計</div>
-                <div class="total-fee-amount">$5298</div>
+              <div class="cart-item-buttons-wrapper">
+                <div class="cart-item-button">-</div>
+                <div class="cart-item-number">1</div>
+                <div class="cart-item-button">+</div>
               </div>
             </div>
-          </div>  
+            <div class="shopping-cart-item">
+              <div class="img-wrapper">
+                <img src="images/product2@1x.png" alt="" class="shopping-cart-image">
+              </div>
+              <div class="cart-item-title">
+                刷色直筒牛仔褲
+              </div>
+              <div class="cart-item-buttons-wrapper">
+                <div class="cart-item-button">-</div>
+                <div class="cart-item-number">1</div>
+                <div class="cart-item-button">+</div>
+              </div>
+            </div>
+            <div class="shipping-fee-wrapper">
+              <div class="shipping-fee-title">運費</div>
+              <div class="shipping-fee-amount">免費</div>
+            </div>
+            <div class="total-fee-wrapper">
+              <div class="total-fee-title">小計</div>
+              <div class="total-fee-amount">$5298</div>
+            </div>
+          </div>
+        </div>
 
-        </div>
-        <div id="btn-control" class="control-panel">
-          <button>上一步</button>
-          <button>下一步</button>
-        </div>
+      </div>
+      <div id="btn-control" class="control-panel">
+        <button>上一步</button>
+        <button>下一步</button>
+      </div>
     </div>
-  </main> -->
+  </main>
   <!-- <footer>
     <div class="footer-logo-wrapper">
       <a href="#" class="footer-logo-link">
@@ -211,7 +218,7 @@
         <div class=""><img src="images/call@2x.png" alt=""></div>
       </div>  
     </div>
-  </footer> -->
+  </footer>
   <script src="dist/bundle.js"></script>
 </body>
 
