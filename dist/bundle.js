@@ -1,1 +1,1 @@
-(()=>{"use strict";console.log("JS loaded!!!")})();
+(()=>{"use strict";console.log("JS loaded!!!");const o=document.querySelector("#btn-control");console.log(o),o.addEventListener("click",(o=>{console.log(o.target),o.target.classList.contains("control__panel--next")&&console.log("下一步")}))})();
