@@ -40,7 +40,6 @@
           <div class="nav__icons--moon"><img src="images/Icon-moon@2x.png" alt=""></div>
         </div>
       </nav>
-      <!--增加 label 標籤-->
       <label class="navbar__label--toggle" for="navbar__input--toggle">
         <img src="images/Vector@2x.png" alt="" id="hamburger">
       </label>
@@ -62,18 +61,18 @@
     </div>
     <div class="main__content-wrapper container">
       <!-- stepper -->
-      <div id="step-control" class="stepper__panel my-6">
+      <div id="step-control" class="stepper__panel mt-6">
         <div class="stepper__panel--container">
           <div class="stepper__panel__step">
             <div class="stepper__panel__step--pc">
-              <div class="stepper__panel__step--circle left active "></div>
-              <div class="stepper__panel__step--label adress">寄送地址</div>
+              <div class="stepper__panel__step--circle left active"></div>
+              <div class="stepper__panel__step--label address">寄送地址</div>
             </div>
 
           </div>
           <div class="stepper__panel__step">
-            <div class="stepper__panel__step--pc">
-              <div class="stepper__panel__step--circle"></div>
+            <div class="stepper__panel__step--pc center">
+              <div class="stepper__panel__step--circle middle"></div>
               <div class="stepper__panel__step--label shipway">運送方式</div>
             </div>
             <span class="connect-line before"></span>
@@ -88,38 +87,84 @@
         </div>
       </div>
       <!-- form -->
-      <div class="form-panel">
+      <div class="form__panel">
         <div class="form-container">
-          <form action="" id="form-checkout">
+          <form action="" id="form-checkout" class="form">
             <div class="part">
-              <div class="part-title">寄送地址</div>
-              <div class="form-row">
+              <div class="part-title my-6">寄送地址</div>
+              <div class="form__row form__row--double">
                 <label for="">稱謂</label>
-                <select name="user-title" id="user-title">
-                  <option value="">先生</option>
-                  <option value="">女士</option>
-                </select>
+                <div class="select-wrapper">
+                  <select name="user-title" id="user-title">
+                    <option value="">先生</option>
+                    <option value="">女士</option>
+                  </select>
+                </div>
                 <label for="">姓名</label><input id="user-name" type="text" placeholder="請輸入姓名" />
               </div>
-              <div class="form-row">
+              <div class="form__row">
                 <label for="">電話</label><input id="user-phone" type="text" placeholder="請輸入行動電話" />
               </div>
-              <div class="form-row">
+              <div class="form__row">
                 <label for="">Email</label><input id="user-mail" type="text" placeholder="請輸入電子郵件" />
               </div>
-              <div class="form-row">
+              <div class="form__row">
                 <label for="">縣市</label>
-                <select name="user-location" id="user-location">
-                  <option value="" disabled selected>請選擇縣市</option>
-                  <option value="">臺北</option>
-                  <option value="">臺中</option>
-                  <option value="">臺南</option>
-                  <option value="">臺東</option>
-                  <option value="">南投</option>
-                </select>
+                <div class="select-wrapper">
+                  <select name="user-location" id="user-location">
+                    <option value="" disabled selected>請選擇縣市</option>
+                    <option value="">臺北</option>
+                    <option value="">臺中</option>
+                    <option value="">臺南</option>
+                    <option value="">臺東</option>
+                    <option value="">南投</option>
+                  </select>
+                </div>
               </div>
-              <div class="form-row">
-                <label for="">地址</label><input id="user-address" type="text" placeholder="請輸入地址" />
+              <div class="form__row">
+                <label for="">地址</label>
+                <input id="user-address" type="text" placeholder="請輸入地址" />
+              </div>
+            </div>
+            <div class="part d-none">
+              <div class="part-title my-6">運送方式</div>
+              <div class="form__row">
+                <div class="form__btn--shipway ship-active">
+                  <div class="radio-wrapper">
+                    <input name="shipway" type="radio" value="standard">
+                  </div>
+                  <div class="form__btn--shipway-description">
+                    <div class="ship-method">標準運送</div>
+                    <div class="ship-time">約3~7個工作天</div>
+                  </div>
+                  <div class="form__btn--shipway-fee">免費</div>
+                </div>
+              </div>
+              <div class="form__row">
+                <div class="form__btn--shipway">
+                  <div class="radio-wrapper">
+                    <input name="shipway" type="radio" value="DHL">
+                  </div>
+                  <div class="form__btn--shipway-description">
+                    <div class="ship-method fw-700">DHL貨運</div>
+                    <div class="ship-time">48小時內送達</div>
+                  </div>
+                  <div class="form__btn--shipway-fee">$500</div>
+                </div>
+              </div>
+            </div>
+            <div class="part d-none">
+              <div class="part-title my-6">付款資訊</div>
+              <div class="form__row">
+                <label for="">持卡人姓名</label><input id="card-name" type="text" placeholder="John Doe" />
+              </div>
+              <div class="form__row">
+                <label for="">卡號</label><input id="card-number" type="text" placeholder="1111 2222 3333 4444" />
+              </div>
+              <div class="form__row form__row--double">
+                <label for="">有效期限</label>
+                <input type="month" name="" id="" placeholder="MM/YY">
+                <label for="">cvc/ccv</label><input id="cvc" type="text" placeholder="123" />
               </div>
             </div>
             <!-- <div id="btn-control" class="control-panel">
@@ -128,36 +173,43 @@
               </div> -->
           </form>
         </div>
-      </div> -->
+      </div>
       <!-- shopping cart -->
-      <div class="shopping-cart-panel">
+      <div class="shopping-cart__panel px-4 pt-4">
         <div id="shopping-cart-container">
-          <h4 class="shopping-cart-title">購物籃</h4>
-          <div class="shopping-cart-items">
-            <div class="shopping-cart-item">
+          <h4 class="shopping-cart__panel--title">購物籃</h4>
+          <div class="shopping-cart__panel--items">
+            <div class="shopping-cart__panel--item">
               <div class="img-wrapper">
                 <img src="images/product1@1x.png" alt="" class="shopping-cart-image">
               </div>
-              <div class="cart-item-title">
-                破壞補釘修身牛仔褲
+              <div class="shopping-cart__panel--item-right">
+                <div class="cart-item-title">
+                  破壞補釘修身牛仔褲
+                </div>
+                <div class="cart-item-buttons-wrapper">
+                  <div class="cart-item-button1"></div>
+                  <div class="cart-item-number">1</div>
+                  <div class="cart-item-button2"></div>
+                </div>
+                <div class="cart-item-price">$3,999</div>
               </div>
-              <div class="cart-item-buttons-wrapper">
-                <div class="cart-item-button">-</div>
-                <div class="cart-item-number">1</div>
-                <div class="cart-item-button">+</div>
-              </div>
+
             </div>
-            <div class="shopping-cart-item">
+            <div class="shopping-cart__panel--item">
               <div class="img-wrapper">
                 <img src="images/product2@1x.png" alt="" class="shopping-cart-image">
               </div>
-              <div class="cart-item-title">
-                刷色直筒牛仔褲
-              </div>
-              <div class="cart-item-buttons-wrapper">
-                <div class="cart-item-button">-</div>
-                <div class="cart-item-number">1</div>
-                <div class="cart-item-button">+</div>
+              <div class="shopping-cart__panel--item-right">
+                <div class="cart-item-title">
+                  刷色直筒牛仔褲
+                </div>
+                <div class="cart-item-buttons-wrapper">
+                  <div class="cart-item-button1"></div>
+                  <div class="cart-item-number">1</div>
+                  <div class="cart-item-button2"></div>
+                </div>
+                <div class="cart-item-price">$1,299</div>
               </div>
             </div>
             <div class="shipping-fee-wrapper">
@@ -172,9 +224,12 @@
         </div>
 
       </div>
-      <div id="btn-control" class="control-panel">
-        <button>上一步</button>
-        <button>下一步</button>
+      <div class="line w-100 mt-8 mb-6">
+      </div>
+      <!-- button -->
+      <div id="btn-control" class="control__panel d-flex">
+        <button class="control__panel--back">上一步<span class="arrow">←</span></button>
+        <button class="control__panel--next">下一步 <span class="arrow">→</span></button>
       </div>
     </div>
   </main>
