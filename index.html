@@ -89,10 +89,10 @@
       <!-- form -->
       <div class="form__panel">
         <div class="form-container">
-          <form action="" id="form-checkout" class="form">
-            <div class="part ">
+          <form action="" id="form" class="form">
+            <div id="step1" class="part">
               <div class="part-title my-6">寄送地址</div>
-              <div class="form__row form__row--double">
+              <div class="form__row form__row--double ">
                 <label for="">稱謂</label>
                 <div class="select-wrapper">
                   <select name="user-title" id="user-title">
@@ -131,7 +131,7 @@
               </div>
 
             </div>
-            <div class="part d-none">
+            <div id="step2" class="part d-none">
               <div class="part-title my-6">運送方式</div>
               <div class="form__row">
                 <div class="form__btn--shipway ship-active">
@@ -158,7 +158,7 @@
                 </div>
               </div>
             </div>
-            <div class="part d-none">
+            <div id="step3" class="part d-none">
               <div class="part-title my-6">付款資訊</div>
               <div class="form__row">
                 <label for="">持卡人姓名</label><input id="card-name" type="text" placeholder="John Doe" />
@@ -172,10 +172,6 @@
                 <label for="">cvc/ccv</label><input id="cvc" type="text" placeholder="123" />
               </div>
             </div>
-            <!-- <div id="btn-control" class="control-panel">
-                <button>上一步</button>
-                <button>下一步</button>
-              </div> -->
           </form>
         </div>
       </div>
@@ -238,14 +234,15 @@
       </div>
     </div>
   </main>
-  <!-- <footer>
-    <div class="footer-logo-wrapper">
-      <a href="#" class="footer-logo-link">
+  <!-- footer -->
+  <footer class="footer">
+    <div class="footer__logo--wrapper">
+      <a href="#" class="footer__logo--link">
         <img src="images/Logo@2x.png" alt="" id="footer-logo">
       </a>
     </div>
-    <div class="footer-part">
-      <p class="footer-part-title">客戶服務</p>
+    <div class="footer__part--service">
+      <p class="footer__part--title">客戶服務</p>
       <ul>
         <li>運送說明</li>
         <li>退換貨相關</li>
@@ -253,32 +250,32 @@
         <li>FAQ</li>
       </ul>
     </div>
-    <div class="footer-part">
-      <p class="footer-part-title">關於我們</p>
+    <div class="footer__part--about">
+      <p class="footer__part--title">關於我們</p>
       <ul>
         <li>品牌故事</li>
         <li>媒體連繫</li>
         <li>Press kit</li>
       </ul>
     </div>
-    <div class="footer-part">
-      <p class="footer-part-title">資訊</p>
+    <div class="footer__part--info">
+      <p class="footer__part--title">資訊</p>
       <ul>
         <li>隱私權政策</li>
         <li>Cookie</li>
         <li>GDPR</li>
       </ul>
     </div>
-    <div class="footer-part">
-      <p class="footer-part-title">追蹤Alpha Shop</p>
+    <div class="footer__part--follow">
+      <p class="footer__part--title">追蹤Alpha Shop</p>
       <div class="alpha-phone">+886 02123 45678</div>
       <div class="social-icon-wrapper">
-        <div class=""><img src="images/fb@2x.png" alt=""></div>
-        <div class=""><img src="images/ig@2x.png" alt=""></div>
-        <div class=""><img src="images/call@2x.png" alt=""></div>
-      </div>  
+        <div class="social-icon"><img src="images/fb@2x.png" alt=""></div>
+        <div class="social-icon"><img src="images/ig@2x.png" alt=""></div>
+        <div class="social-icon"><img src="images/call@2x.png" alt=""></div>
+      </div>
     </div>
-  </footer> -->
+  </footer>
   <script src="dist/bundle.js"></script>
 </body>
 
