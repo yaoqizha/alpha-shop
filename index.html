@@ -61,7 +61,7 @@
     </div>
     <div class="main__content-wrapper container">
       <!-- stepper -->
-      <div id="step-control" class="stepper__panel mt-6">
+      <div id="step-control" class="stepper__panel">
         <div class="stepper__panel--container">
           <div class="stepper__panel__step">
             <div class="stepper__panel__step--pc">
@@ -102,29 +102,34 @@
                 </div>
                 <label for="">姓名</label><input id="user-name" type="text" placeholder="請輸入姓名" />
               </div>
-              <div class="form__row">
-                <label for="">電話</label><input id="user-phone" type="text" placeholder="請輸入行動電話" />
-              </div>
-              <div class="form__row">
-                <label for="">Email</label><input id="user-mail" type="text" placeholder="請輸入電子郵件" />
-              </div>
-              <div class="form__row">
-                <label for="">縣市</label>
-                <div class="select-wrapper">
-                  <select name="user-location" id="user-location">
-                    <option value="" disabled selected>請選擇縣市</option>
-                    <option value="">臺北</option>
-                    <option value="">臺中</option>
-                    <option value="">臺南</option>
-                    <option value="">臺東</option>
-                    <option value="">南投</option>
-                  </select>
+              <div class="form-wrapper">
+                <div class="form__row">
+                  <label for="">電話</label><input id="user-phone" type="text" placeholder="請輸入行動電話" />
+                </div>
+                <div class="form__row">
+                  <label for="">Email</label><input id="user-mail" type="text" placeholder="請輸入電子郵件" />
                 </div>
               </div>
-              <div class="form__row">
-                <label for="">地址</label>
-                <input id="user-address" type="text" placeholder="請輸入地址" />
+              <div class="form-wrapper">
+                  <div class="form__row">
+                    <label for="">縣市</label>
+                    <div class="select-wrapper">
+                      <select name="user-location" id="user-location">
+                        <option value="" disabled selected>請選擇縣市</option>
+                        <option value="">臺北</option>
+                        <option value="">臺中</option>
+                        <option value="">臺南</option>
+                        <option value="">臺東</option>
+                        <option value="">南投</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="form__row">
+                    <label for="">地址</label>
+                    <input id="user-address" type="text" placeholder="請輸入地址" />
+                  </div>
               </div>
+            
             </div>
             <div class="part d-none">
               <div class="part-title my-6">運送方式</div>
@@ -175,7 +180,7 @@
         </div>
       </div>
       <!-- shopping cart -->
-      <div class="shopping-cart__panel px-4 pt-4">
+      <div class="shopping-cart__panel">
         <div id="shopping-cart-container">
           <h4 class="shopping-cart__panel--title">購物籃</h4>
           <div class="shopping-cart__panel--items">
@@ -228,7 +233,7 @@
       </div>
       <!-- button -->
       <div id="btn-control" class="control__panel d-flex">
-        <button class="control__panel--back d-none">上一步<span class="arrow">←</span></button>
+        <button class="control__panel--back">上一步<span class="arrow">←</span></button>
         <button class="control__panel--next">下一步 <span class="arrow">→</span></button>
       </div>
     </div>
