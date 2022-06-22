@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="dist/main.css" />
 </head>
 
-<body>
+<body data-theme="light">
   <header>
     <div class="navbar">
       <input type="checkbox" class="navbar__input--toggle" id="navbar__input--toggle" />
@@ -37,7 +37,11 @@
         <div class="nav__icons">
           <div class="nav__icons--search"><img src="images/Icon-search@2x.png" alt=""></div>
           <div class="nav__icons--cart"><img src="images/Icon-cart@2x.png" alt=""></div>
-          <div class="nav__icons--moon"><img src="images/Icon-moon@2x.png" alt=""></div>
+          <div class="nav__icons--moon">
+            <input type="checkbox" class="nav__darkmode__input" id="nav__darkmode--toggle" />
+            <label for="nav__darkmode--toggle" class="nav__darkmode--label"><img src="images/Icon-moon@2x.png" alt="">
+            </label>
+          </div>
         </div>
       </nav>
       <label class="navbar__label--toggle" for="navbar__input--toggle">
@@ -50,11 +54,16 @@
       <div class="nav__icons--pc">
         <div class="nav__icons--pc--search"><img src="images/Icon-search@2x.png" alt=""></div>
         <div class="nav__icons--pc--cart"><img src="images/Icon-cart@2x.png" alt=""></div>
-        <div class="nav__icons--pc--moon"><img src="images/Icon-moon@2x.png" alt=""></div>
-      </div>
+        <div class="nav__icons--pc--moon">
 
+          <label for="darkmode__input--toggle--pc" class="nav__darkmode__label--pc"><img src="images/Icon-moon@2x.png"
+              alt="">
+          </label>
+        </div>
+      </div>
     </div>
   </header>
+  <input type="checkbox" checked="checked" class="nav__darkmode__input--pc" id="darkmode__input--toggle--pc" />
   <main id="main-content" class="mt-4">
     <div class="main__title-wrapper container">
       <h2 class="main-title">結帳</h2>
@@ -237,47 +246,47 @@
   <!-- footer -->
   <footer class="footer w-100">
     <div class="footer--container">
-        <div class="footer__logo--wrapper">
-          <a href="#" class="footer__logo--link">
-            <img src="images/Logo@2x.png" alt="" id="footer-logo">
-          </a>
+      <div class="footer__logo--wrapper">
+        <a href="#" class="footer__logo--link">
+          <img src="images/Logo@2x.png" alt="" id="footer-logo">
+        </a>
+      </div>
+      <div class="footer__part--service">
+        <p class="footer__part--title">客戶服務</p>
+        <ul>
+          <li>運送說明</li>
+          <li>退換貨相關</li>
+          <li>付款資訊</li>
+          <li>FAQ</li>
+        </ul>
+      </div>
+      <div class="footer__part--about">
+        <p class="footer__part--title">關於我們</p>
+        <ul>
+          <li>品牌故事</li>
+          <li>媒體連繫</li>
+          <li>Press kit</li>
+        </ul>
+      </div>
+      <div class="footer__part--info">
+        <p class="footer__part--title">資訊</p>
+        <ul>
+          <li>隱私權政策</li>
+          <li>Cookie</li>
+          <li>GDPR</li>
+        </ul>
+      </div>
+      <div class="footer__part--follow">
+        <p class="footer__part--title">追蹤Alpha Shop</p>
+        <div class="alpha-phone">+886 02123 45678</div>
+        <div class="social-icon-wrapper">
+          <div class="social-icon"><img src="images/fb@2x.png" alt=""></div>
+          <div class="social-icon"><img src="images/ig@2x.png" alt=""></div>
+          <div class="social-icon"><img src="images/call@2x.png" alt=""></div>
         </div>
-        <div class="footer__part--service">
-          <p class="footer__part--title">客戶服務</p>
-          <ul>
-            <li>運送說明</li>
-            <li>退換貨相關</li>
-            <li>付款資訊</li>
-            <li>FAQ</li>
-          </ul>
-        </div>
-        <div class="footer__part--about">
-          <p class="footer__part--title">關於我們</p>
-          <ul>
-            <li>品牌故事</li>
-            <li>媒體連繫</li>
-            <li>Press kit</li>
-          </ul>
-        </div>
-        <div class="footer__part--info">
-          <p class="footer__part--title">資訊</p>
-          <ul>
-            <li>隱私權政策</li>
-            <li>Cookie</li>
-            <li>GDPR</li>
-          </ul>
-        </div>
-        <div class="footer__part--follow">
-          <p class="footer__part--title">追蹤Alpha Shop</p>
-          <div class="alpha-phone">+886 02123 45678</div>
-          <div class="social-icon-wrapper">
-            <div class="social-icon"><img src="images/fb@2x.png" alt=""></div>
-            <div class="social-icon"><img src="images/ig@2x.png" alt=""></div>
-            <div class="social-icon"><img src="images/call@2x.png" alt=""></div>
-          </div>
-        </div>
+      </div>
     </div>
- 
+
   </footer>
   <script src="dist/bundle.js"></script>
 </body>

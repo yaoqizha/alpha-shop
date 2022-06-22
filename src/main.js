@@ -57,3 +57,34 @@ btnControl.addEventListener('click', (e) => {
 
   console.log('當前step', step)
 })
+
+
+
+const darkModeToggle = document.getElementById("darkmode__input--toggle--pc");
+const darkModeToggleMobile = document.getElementById("nav__darkmode--toggle");
+const navLogo = document.querySelector(".navbar__logo")
+console.log(navLogo)
+const footerLogo = document.querySelector("#footer-logo")
+// toggle handler
+const darkModeToggleHandler = event => {
+  // if (event.target.checked) {
+  //   document.querySelector('body').setAttribute("data-theme", "dark");
+  //   document.querySelector('footer').setAttribute("data-theme", "dark");
+  // } else {
+  //   document.querySelector('body').setAttribute("data-theme", "light");
+  //   document.querySelector('footer').setAttribute("data-theme", "light");
+  // }
+  if (event.target.checked) {
+    document.documentElement.setAttribute("data-theme", "dark");
+    navLogo.setAttribute("src", "images/Logo-dark@2x.png")
+    footerLogo.setAttribute("src", "images/Logo-dark@2x.png")
+  } else {
+    document.documentElement.setAttribute("data-theme", "light");
+    navLogo.setAttribute("src", "images/Logo@2x.png")
+    footerLogo.setAttribute("src", "images/Logo@2x.png")
+  }
+};
+// bind the event
+darkModeToggle.addEventListener("change", darkModeToggleHandler);
+darkModeToggleMobile.addEventListener("change", darkModeToggleHandler);
+
