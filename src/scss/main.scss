@@ -63,16 +63,6 @@
    100: 100%
  );
 
- //  body[data-theme="dark"] {
- //    background-color: black;
- //    color: white;
- //  }
-
- //  footer[data-theme="dark"] {
- //    background-color: red;
- //    color: white;
- //  }
-
  :root {
    --main-bg: white;
    --main-fc: #2A2A2A;
@@ -230,11 +220,8 @@
    font-family: 'Noto Sans TC', sans-serif;
  }
 
-
-
-
  .d-none {
-   display: none !important;
+   display: none;
  }
 
  .d-inline {
