@@ -119,9 +119,10 @@ const cartBtnControl = e => {
     cartNumber -= 1
     if (cartNumber < 0) {
       cartNumber = 0
+    } else {
+      totalAmount -= cartPrice
     }
     cartNumberTag.innerText = cartNumber
-    totalAmount -= cartPrice
   }
 
   cartItemAmount = cartNumber * cartPrice

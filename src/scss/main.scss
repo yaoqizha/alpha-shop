@@ -479,8 +479,8 @@
          background-color: var(--step-done);
        }
 
-       .checked::after {
-         content: "\2714" !important;
+       .stepper__panel__step--circle.checked::after {
+         content: "\2714";
        }
 
        &--label {
