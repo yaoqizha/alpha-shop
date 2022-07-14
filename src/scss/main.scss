@@ -75,18 +75,23 @@
    --form-label: #808080;
    --pale-grey: #F0F0F5;
    --shoppingcart-bg: white;
+   --control-btn: #fff;
+   --control-fc: black;
    --footer-bg: #E5E5E5;
+
  }
 
  [data-theme="dark"] {
    --main-bg: black;
    --main-fc: #fff;
    --input-border: #5E5E5E;
-   --input-fc: #FFF;
+   --input-fc: #999;
    --cart-button: #808080;
    --step-undone: #fff;
    --step-done: #333333;
    --shoppingcart-bg: #383838;
+   --control-btn: rgba(0, 0, 0, 0);
+   --control-fc: #fff;
    --footer-bg: #333333;
  }
 
@@ -97,6 +102,7 @@
    padding-left: 8px;
    font-size: 12px;
    color: var(--input-fc);
+   background-color: #fff;
  }
 
  %cart-button-style {
@@ -810,8 +816,8 @@
 
      &--back {
        @extend %control-button-style;
-       background-color: #fff;
-       color: black;
+       color: var(--control-fc);
+       background-color: var(--control-btn);
        padding-left: 0;
        text-align: left;
      }
